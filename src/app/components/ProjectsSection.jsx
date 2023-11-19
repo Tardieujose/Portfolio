@@ -11,7 +11,7 @@ const projectsData = [
     description: "SPA using Next.js and Tailwinds",
     image: "/images/projects/next-portfolio.png",
     tag: ["All", "Web"],
-    deployUrl: "https://portfolio-tardieu-jose.vercel.app",
+    deployUrl: "https://github.com/Tardieujose/Portfolio",
     previewUrl: "/",
   },
   {

@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-           If at first, you don't succeed; call it version 1.0!
+           If at first, you dont succeed; call it version 1.0!
           </p>
           <div>
             <Link

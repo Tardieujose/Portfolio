@@ -8,19 +8,19 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-<ul className="list-disc pl-2" style={{ columns: "3" }}>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
+<ul className="list-disc" style={{ columns: "3" }}>
+        <li>Next.js</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
         <li>Git</li>
         <li>Redux</li>
         <li>Express</li>
-        <li>C++</li>
-        <li>Ant Design</li>
-        <li>Next.js</li>
+        <li>Node.js</li>
+        <li>PostgreSQL</li>
+        <li>Sequelize</li>
+        <li>JavaScript</li>
+        <li>MongoDB</li>
       </ul>
     ),
   },

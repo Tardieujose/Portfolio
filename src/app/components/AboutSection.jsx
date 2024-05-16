@@ -59,13 +59,13 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.jpg" width={500} height={500} />
+        <Image src="/images/about-image.jpg" alt="" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           Hello, my name is José Alberto Tardieu and I am from San Luis, Argentina. Since I was a child I have been interested in technology and I am excited to see how it grows every day.
 
-My path in this IT world began at the National University of San Luis studying the degree of University Technician in Electronics until I reached my last year. Then the pandemic arrived and it changed my life forever, discovering a whole new world regarding programming and that's how in 2022 I decided to apply to the SoyHenry bootcamp.
+My path in this IT world began at the National University of San Luis studying the degree of University Technician in Electronics until I reached my last year. Then the pandemic arrived and it changed my life forever, discovering a whole new world regarding programming and thats how in 2022 I decided to apply to the SoyHenry bootcamp.
 
 Today I can say that I am super excited and prepared to apply my new knowledge and continue growing as a Full Stack developer!
           </p>

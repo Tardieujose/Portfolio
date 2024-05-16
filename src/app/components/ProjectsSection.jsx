@@ -8,57 +8,57 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    description: "SPA using Next.js and Tailwinds",
+    image: "/images/projects/next-portfolio.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    deployUrl: "https://github.com/Tardieujose/Portfolio",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Nómada Suite",
+    description: "Website to search for accommodations while you work in latinamerica",
+    image: "/images/projects/banner-nomada.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    deployUrl: "https://nomadadeploy-g8z9.vercel.app/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Dog's Finder",
+    description: "SPA to look for your favorite dog's info. Also can create or modified info for your own dog",
+    image: "/images/projects/perritos.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    deployUrl: "https://pi-dogs-main-beta.vercel.app/",
     previewUrl: "/",
   },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 4,
+  //   title: "Food Ordering Application",
+  //   description: "Project 4 description",
+  //   image: "/images/projects/4.png",
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "React Firebase Template",
+  //   description: "Authentication and CRUD operations",
+  //   image: "/images/projects/5.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Full-stack Roadmap",
+  //   description: "Project 5 description",
+  //   image: "/images/projects/6.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-4 py-10">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -115,7 +115,7 @@ const ProjectsSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
+              deployUrl={project.deployUrl}
               previewUrl={project.previewUrl}
             />
           </motion.li>

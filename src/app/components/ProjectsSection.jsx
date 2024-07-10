@@ -7,11 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Next js Portfolio Website",
     description: "SPA using Next.js and Tailwinds",
     image: "/images/projects/next-portfolio.png",
     tag: ["All", "Web"],
     deployUrl: "https://github.com/Tardieujose/Portfolio",
+    gitUrl: "https://github.com/Tardieujose/Portfolio.git",
     previewUrl: "/",
   },
   {
@@ -21,6 +22,7 @@ const projectsData = [
     image: "/images/projects/banner-nomada.png",
     tag: ["All", "Web"],
     deployUrl: "https://nomadadeploy-g8z9.vercel.app/",
+    gitUrl: "https://github.com/Tardieujose/nomadadeploy.git",
     previewUrl: "/",
   },
   {
@@ -30,26 +32,29 @@ const projectsData = [
     image: "/images/projects/perritos.png",
     tag: ["All", "Web"],
     deployUrl: "https://pi-dogs-main-beta.vercel.app/",
+    gitUrl: "https://github.com/Tardieujose/Dogs-App.git",
     previewUrl: "/",
   },
-  // {
-  //   id: 4,
-  //   title: "Food Ordering Application",
-  //   description: "Project 4 description",
-  //   image: "/images/projects/4.png",
-  //   tag: ["All", "Mobile"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
-  // {
-  //   id: 5,
-  //   title: "React Firebase Template",
-  //   description: "Authentication and CRUD operations",
-  //   image: "/images/projects/5.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+  {
+    id: 4,
+    title: "E-commerce",
+    description: "Full e-commerce made with Next.js",
+    image: "/images/projects/Tienda.png",
+    tag: ["All", "Web", "Mobile"],
+    deployUrl: "https://badwolf.vercel.app/",
+    gitUrl: "https://github.com/Tardieujose/Ecommerce-nextjs.git",
+    previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Admin Panel e-commerce",
+    description: "Admin panel for e-commerce to view all the orders. Also put and edit the products as well as see important info.",
+    image: "/images/projects/admin-tienda.png",
+    tag: ["All", "Web", "Mobile"],
+    deployUrl: "https://bw-adminpanel.vercel.app/",
+    gitUrl: "https://github.com/Tardieujose/Admin-Ecommerce-nextjs.git",
+    previewUrl: "/",
+  },
   // {
   //   id: 6,
   //   title: "Full-stack Roadmap",
@@ -116,6 +121,7 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               deployUrl={project.deployUrl}
+              gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
           </motion.li>

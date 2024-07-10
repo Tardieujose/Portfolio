@@ -3,7 +3,7 @@ import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 // , previewUrl
-const ProjectCard = ({ imgUrl, title, description, deployUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, deployUrl, gitUrl }) => {
   return (
     <div>
       <div
@@ -17,12 +17,12 @@ const ProjectCard = ({ imgUrl, title, description, deployUrl }) => {
           >
             <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </Link>
-          {/* <Link
-            href={previewUrl}
+          <Link
+            href={gitUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
             <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-          </Link> */}
+          </Link>
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
